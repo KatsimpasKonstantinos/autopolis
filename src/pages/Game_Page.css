@@ -1,0 +1,19 @@
+.Game_Page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Game_Page__Game_Selected {
+    display: flex;
+    flex-direction: column;
+}
+
+.Game_Page__Game_Grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(170, 137, 137);
+
+}

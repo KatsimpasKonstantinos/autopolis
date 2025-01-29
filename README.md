@@ -2,5 +2,5 @@
 
 
 ## Time spent on this Project
-- Konsti: 7h
+- Konsti: 20h
 

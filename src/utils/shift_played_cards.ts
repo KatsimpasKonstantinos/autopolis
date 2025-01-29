@@ -1,8 +1,8 @@
 import played_card from "../types/played_card";
 
-const FREE_SPACE = 3;
+const FREE_SPACE = 2;
 
-function shift_board_state(played_cards: played_card[]): played_card[] {
+function shift_played_cards(played_cards: played_card[]): played_card[] {
     let min_x = FREE_SPACE;
     let min_y = FREE_SPACE;
 
@@ -21,4 +21,5 @@ function shift_board_state(played_cards: played_card[]): played_card[] {
     return played_cards;
 }
 
-export default shift_board_state;
+export default shift_played_cards;
+export { FREE_SPACE };

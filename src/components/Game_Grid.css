@@ -1,0 +1,15 @@
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    max-height: calc(70vh / var(--grid-row-count));
+    max-width: calc(70vw / var(--grid-column-count));
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}

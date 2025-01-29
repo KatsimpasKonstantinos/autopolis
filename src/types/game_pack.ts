@@ -5,6 +5,7 @@ import terrain from "./terrain";
 type game_pack = {
     name: string;
     terrain: terrain[];
+    media: { [key: string]: string };
     cards: card[];
     placement_rules: placement_rule[];
 };

@@ -7,6 +7,9 @@
   --color-accent-d: #261A66;
   --color-accent-e: #190B2F;
   --color-background: #0F000A;
+
+  --grid-row-count: 1;
+  --grid-column-count: 1;
 }
 
 body {

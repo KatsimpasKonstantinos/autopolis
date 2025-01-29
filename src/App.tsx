@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import BlockGrid from './components/BlockGrid';
 import game from './classes/game';
 import naturopolis from './games/naturopolis/naturopolis';
+import Game from './pages/Game_Page';
+import Landing_Page from './pages/Landing_Page';
+import Select_Game_Page from './pages/Select_Game_Page';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  let test_game = new game(naturopolis);
 
-  console.log(test_game);
+  function render_content() {
+    return (
+      <>
+        <Routes>
+          <Route path="/" element={<Landing_Page />} />
+          <Route path="/select_game" element={<Select_Game_Page />} />
+          <Route path="/game" element={<Game />} />
+        </Routes>
+      </>
+    );
+  }
 
   return (
     <div className="App">
-      <BlockGrid rows={12} cols={16} canvasSize={1} />
+      {render_content()}
     </div>
   );
 }
